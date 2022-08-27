@@ -97,7 +97,7 @@ def results(request, problem_id):
             user_stdout = res.stdout.decode('utf-8')
             if str(user_stdout)==str(testcase.output):
                 verdict = "Accepted"
-            testcase.output += '\n' # added extra line to compare user output having extra ling at the end of their output
+            testcase.output += '\n' # added extra line to compare user output having extra line at the end of their output
             if str(user_stdout)==str(testcase.output):
                 verdict = "Accepted"
    
